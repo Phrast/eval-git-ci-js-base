@@ -1,5 +1,5 @@
 // Importer les fonctions 
-const { getTasks, addTask, toggleTask, reset } = require('../lib/tasks');
+const { getTasks, addTask, toggleTask, reset, countDone } = require('../lib/tasks');
 
 // Reset
 beforeEach(() => {
@@ -74,4 +74,18 @@ test('toggleTask retourne null si lid nexiste pas', () => {
   const resultat = toggleTask(999);
   
   expect(resultat).toBe(null);
+});
+
+// Test  countDone
+test('countDone retourne 0 quand la liste est vide', () => {
+  expect(countDone()).toBe(0);
+});
+
+test('countDone compte les tâches terminées', () => {
+  const tache1 = addTask('Tâche 1');
+  const tache2 = addTask('Tâche 2');
+
+  tache1.done = true;
+
+  expect(countDone()).toBe(1);
 });
