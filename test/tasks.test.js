@@ -1,5 +1,5 @@
-// Importer les fonctions 
-const { getTasks, addTask, reset } = require('../lib/tasks');
+// Importer les fonctions
+const { getTasks, addTask, reset, countDone } = require('../lib/tasks');
 
 // Remettre à zero
 beforeEach(() => {
@@ -13,10 +13,7 @@ test('la liste de tâches est vide', () => {
 
 // Ajouter une tache 
 test('addTask ajoute une tâche avec un id, un nom et done=false', () => {
-  // Ajouter une tâche
   const tache = addTask('Faire du versioning avec Marc');
-  
-  // Verifier que la tache a les bonnes propriétés
   expect(tache.id).toBe(1);
   expect(tache.name).toBe('Faire du versioning avec Marc');
   expect(tache.done).toBe(false);
@@ -36,8 +33,22 @@ test('chaque tâche a un id unique', () => {
   const tache1 = addTask('Tâche 1');
   const tache2 = addTask('Tâche 2');
   const tache3 = addTask('Tâche 3');
-  
+
   expect(tache1.id).toBe(1);
   expect(tache2.id).toBe(2);
   expect(tache3.id).toBe(3);
+});
+
+// Test  countDone
+test('countDone retourne 0 quand la liste est vide', () => {
+  expect(countDone()).toBe(0);
+});
+
+test('countDone compte les tâches terminées', () => {
+  const tache1 = addTask('Tâche 1');
+  const tache2 = addTask('Tâche 2');
+
+  tache1.done = true;
+
+  expect(countDone()).toBe(1);
 });
