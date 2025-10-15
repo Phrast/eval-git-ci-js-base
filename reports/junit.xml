@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="0" errors="0" time="0.354">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-10-15T13:39:50" time="0.28" tests="4">
+    <testcase classname=" la liste de tâches est vide au début" name=" la liste de tâches est vide au début" time="0.002">
+    </testcase>
+    <testcase classname=" addTask ajoute une tâche avec un id, un nom et done=false" name=" addTask ajoute une tâche avec un id, un nom et done=false" time="0.001">
+    </testcase>
+    <testcase classname=" addTask enlève les espaces au début et à la fin" name=" addTask enlève les espaces au début et à la fin" time="0">
+    </testcase>
+    <testcase classname=" chaque tâche a un id unique" name=" chaque tâche a un id unique" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>
