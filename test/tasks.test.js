@@ -88,3 +88,4 @@ test('countDone compte les tâches terminées', () => {
   tache1.done = true;
 
   expect(countDone()).toBe(1);
+});
