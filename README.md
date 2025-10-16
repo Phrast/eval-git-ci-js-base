@@ -35,3 +35,11 @@ Recherche :
 - tag : ca marque un commit avec un nom, c'est souvent utilise pour marque v1.0.1, v1.0.2 ect...
 - stash : met de coté nos modifs non commit pour revenir a un etat propre
 - release : version de mon logiciel ou app basé sur un tag (avec optionnelement des fichiers a telechargé)
+
+
+Lien des PR :
+- https://github.com/Phrast/eval-git-ci-js-base/pull/5 : ajout des docs et confli sur tasks.test.js on a accepte les incoming change pour resoudre
+- https://github.com/Phrast/eval-git-ci-js-base/pull/4 : fonctionnalité 3
+- https://github.com/Phrast/eval-git-ci-js-base/pull/3 : fonctionnalité 2
+- https://github.com/Phrast/eval-git-ci-js-base/pull/2 : fonctionnalité 1, confli sur junit.xml on a accepte les previous change pour resoudre
+- https://github.com/Phrast/eval-git-ci-js-base/pull/1 : les CI
