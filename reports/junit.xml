@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="7" failures="0" errors="0" time="0.635">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-10-15T14:24:03" time="0.536" tests="7">
-    <testcase classname=" la liste de tâches est vide" name=" la liste de tâches est vide" time="0.003">
-    </testcase>
-    <testcase classname=" addTask ajoute une tâche avec un id, un nom et done=false" name=" addTask ajoute une tâche avec un id, un nom et done=false" time="0.001">
-    </testcase>
-    <testcase classname=" addTask enlève les espaces au début et à la fin" name=" addTask enlève les espaces au début et à la fin" time="0.001">
-    </testcase>
-    <testcase classname=" chaque tâche a un id unique" name=" chaque tâche a un id unique" time="0.001">
-    </testcase>
-    <testcase classname=" toggleTask fait passer done de false à true" name=" toggleTask fait passer done de false à true" time="0">
-    </testcase>
-    <testcase classname=" toggleTask fait passer done de true à false" name=" toggleTask fait passer done de true à false" time="0">
-    </testcase>
-    <testcase classname=" toggleTask retourne null si l id n existe pas" name=" toggleTask retourne null si l id n existe pas" time="0">
+<testsuites name="jest tests" tests="1" failures="0" errors="0" time="0.329">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-10-15T13:16:00" time="0.285" tests="1">
+    <testcase classname=" initial task list is empty" name=" initial task list is empty" time="0.001">
     </testcase>
   </testsuite>
 </testsuites>

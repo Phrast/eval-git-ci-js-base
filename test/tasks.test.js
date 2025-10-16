@@ -35,7 +35,7 @@ test('chaque tâche a un id unique', () => {
   const tache1 = addTask('Tâche 1');
   const tache2 = addTask('Tâche 2');
   const tache3 = addTask('Tâche 3');
-  
+
   expect(tache1.id).toBe(1);
   expect(tache2.id).toBe(2);
   expect(tache3.id).toBe(3);
