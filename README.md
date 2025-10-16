@@ -2,7 +2,7 @@ Nicolas Caron / Killian Doizelet
 
 Petite description :
 
-application de gestion de tache
+application de gestion de taches
 
 
 Les commande que nous avons utiliser sont :
